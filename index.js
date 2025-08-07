@@ -7,11 +7,11 @@ const axios = require('axios');
 
 // Get the tokens from your environment variables
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const CHATSUTRA_API_KEY = process.env.CHATSUTRA_API_KEY;
+const CHATSUTRA_API_KEY = process.env.SUTRA_API_KEY; // Corrected to SUTRA_API_KEY
 
 // Check if tokens are available
 if (!TELEGRAM_BOT_TOKEN || !CHATSUTRA_API_KEY) {
-  console.error("Error: TELEGRAM_BOT_TOKEN and CHATSUTRA_API_KEY must be set in the environment.");
+  console.error("Error: TELEGRAM_BOT_TOKEN and SUTRA_API_KEY must be set in the environment.");
   process.exit(1);
 }
 
